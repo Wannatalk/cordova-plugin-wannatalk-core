@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-wannatalk-core",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "",
   "cordova": {
     "id": "cordova-plugin-wannatalk-core",
@@ -15,9 +15,5 @@
     "cordova-ios"
   ],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@ionic-native/core": "^5.31.1",
-    "gulp": "^4.0.2"
-  }
+  "license": "ISC"
 }
