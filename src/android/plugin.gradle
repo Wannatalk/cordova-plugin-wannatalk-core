@@ -1,0 +1,14 @@
+android {
+    defaultConfig {
+      multiDexEnabled true
+    }
+}
+
+repositories {
+  jcenter() // Note that you need to add jcenter repository !!! that's it
+}
+
+dependencies {
+  implementation 'com.wannatalk.core:wannatalk:1.1.0'
+
+}

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-wannatalk-core" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>WannatalkCore</name>
+    <js-module name="WannatalkCore" src="www/WannatalkCore.js">
+        <clobbers target="cordova.plugins.WannatalkCore" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="WannatalkCore">
+                
+<!--                android-packageName="cordova_plugin_wannatalk_core"-->
+
+                <param name="android-package" value="cordova_plugin_wannatalk_core.WannatalkCore" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/WannatalkCore.java" target-dir="src/cordova_plugin_wannatalk_core/WannatalkCore" />
+        <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
+        
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="WannatalkCore">
+                <param name="ios-package" value="WannatalkCore" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/WannatalkCore.m" />
+<!--        <source-file src="src/ios/WTConfigHandler.m" />-->
+        <pod git="https://github.com/edzehoo/WannatalkAPI-iOS.git" name="WTExternalSDK" tag="1.6.1" />
+    </platform>
+</plugin>
