@@ -1,9 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-wannatalk-core" version="0.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-wannatalk-core" version="0.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>WannatalkCore</name>
     <js-module name="WannatalkCore" src="www/WannatalkCore.js">
         <clobbers target="cordova.plugins.WannatalkCore" />
     </js-module>
+    
+    <dependency id="cordova-plugin-cocoapod-support"/>
+    
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="WannatalkCore">
